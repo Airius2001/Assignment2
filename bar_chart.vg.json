@@ -1,0 +1,32 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/Airius2001/Assignment2/main/Crime_population.csv"
+    },
+    "transform": [
+      {"calculate": "toNumber(datum.year)", "as": "yearInt"},
+      {"filter": "datum.yearInt === YearSelector"}
+      ],
+      "params": [
+        {
+          "name": "YearSelector",
+          "value": 2001,
+          "bind": {
+            "input": "range",
+            "min": 2001,
+            "max": 2016,
+            "step": 1,
+            "name": "Year Selector: "
+          }
+        }
+      ],
+    "mark": "bar",
+    "encoding": {
+      "x": {"field": "jurisdiction", "type": "nominal", "axis": {"labelAngle": -90}, "title": "Jurisdiction"},
+      "y": {"field": "prisoner_count", "type": "quantitative", "title": "Prisoner count"},
+      "tooltip": [
+        {"field": "prisoner_count", "type": "quantitative", "title": "Prisoner amount: "}
+      ]
+      }
+  }
+  
