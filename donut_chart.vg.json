@@ -2,7 +2,6 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "height": 400,
     "width": 500,
-    "title":"Analogy of crime type from 2001 to 2016 in USA",
     "data": {
       "url": "https://raw.githubusercontent.com/Airius2001/week10/main/rearranged_crime_total.csv"
     },

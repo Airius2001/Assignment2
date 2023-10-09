@@ -1,9 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 500,
-  "height": 400,
+  "width": 400,
+  "height": 300,
   "data": {"url": "https://raw.githubusercontent.com/Airius2001/3179/main/cleaned.csv"},
-  "title": "Map of the number of incarcerated people in the United States from 2001 to 2016",
   "layer": [
     {
       "mark": {

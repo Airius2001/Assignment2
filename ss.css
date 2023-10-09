@@ -1,0 +1,119 @@
+/* global styles */
+* { margin: 0px; }
+
+header, section, footer {
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+header {
+    padding-top: 550px;
+    padding-bottom: 210px;
+    color: rgb(255, 255, 255);
+    background-image: url(bg.jpg);
+    background-size: cover;
+}
+
+header h1 {
+    position: absolute;
+    top: 200px;
+    left: 250px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    font-size: 50px;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+
+header h2 {
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+header p{
+    position: absolute;
+    top: 450px;
+    left: 400px;
+    text-align: center;
+    width: 700px;
+    line-height: 30px;
+}
+
+.button{
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    margin-top: 20px;
+    padding: 15px;
+    left: 275px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(223, 223, 182);
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px rgba( 0, 0, 0, 0.75 );
+    text-decoration: none;
+}
+
+/*font style*/
+h1 {
+    text-shadow: 0px 1px 10px black;
+}
+
+header h2 {
+    color: rgb(223, 223, 182);
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0px 1px 5px black;
+}
+
+header p {
+    font-family: 'Itim', cursive;
+    font-size: 20px;
+}
+
+#Map h2 {
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0px 1px 5px rgb(131, 128, 128);
+    margin-left: 100px;
+    font-style: italic;
+    font-size: 30px;
+}
+
+#Map p{
+    font-size: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+#linechart h2 {
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0px 1px 5px rgb(131, 128, 128);
+    margin-left: 100px;
+    font-style: italic;
+    font-size: 30px;
+}
+
+#linechart p {
+    position: relative;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 200px;
+    top: 50px;
+    width: 76%;
+    font-size: 20px;
+}
+
+#donutchart h2 {
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0px 1px 5px rgb(131, 128, 128);
+    margin-left: 100px;
+    font-style: italic;
+    font-size: 30px;
+}

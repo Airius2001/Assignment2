@@ -1,0 +1,712 @@
+/* global styles */
+* { margin: 0px; }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+div {
+    width:1200px;
+    margin: 0px auto;
+}
+    
+
+header, section, footer {
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+h3 {
+    font-family: 'Autour One', cursive;
+    font-weight: normal;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #004466;
+    text-align: center;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+header {
+    padding-top: 550px;
+    padding-bottom: 210px;
+    color: white;
+    background-image: url(bg.jpeg);
+    background-size: cover;
+}
+
+header h1 {
+    position: absolute;
+    top: 200px;
+    left: 250px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    font-size: 50px;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+
+header nav ul {
+    list-style: none; 
+}
+
+header nav li {
+    display: inline;
+    margin-left: 50px; 
+}
+
+header a {
+    text-decoration: none; 
+    color: white;
+}
+
+header a:hover { text-decoration: underline; }
+
+header h2 {
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+header p{
+    position: absolute;
+    top: 450px;
+    left: 400px;
+    text-align: center;
+    width: 700px;
+    line-height: 30px;
+}
+
+header nav {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.button{
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    margin-top: 20px;
+    padding: 15px;
+    left: 275px;
+    color: rgb(255, 255, 255);
+    background-color: #00AC6A;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px rgba( 0, 0, 0, 0.75 );
+}
+
+#Subtopic h2{
+    text-align: center;
+    position: relative;
+    bottom: 60px;
+    background-color: #156AA8;
+    padding: 50px;
+    font-size: 30px;
+}
+
+.collections {
+    position: relative;
+    top: 50px;
+}
+
+.collections {
+    --n: 1; /* number of rows*/
+    --m: 8; /* number of columns */
+    --g: 0px;  /* control the gap */
+    --f: .8;   /* control the scale factor */
+  
+    display: grid;
+    gap: var(--g);
+    width: 90vw;
+    height: 100vh;
+    grid-template-columns: repeat(var(--m),auto);
+}
+
+.collections > img {
+    width: 0;
+    height: 0;
+    min-height: 50%;
+    min-width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    filter: grayscale(80%);
+    transition: .35s linear;
+}
+
+.collections img:hover{
+    filter: grayscale(0);
+    width:  calc(100vh*var(--f)/var(--n));
+    height: calc(100vw*var(--f)/var(--m));
+}
+
+/* Learn More button*/
+
+.button1 {
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    left: 50%;
+    bottom: 375px;
+    color: rgb(255, 255, 255);
+    background-color: #00AC6A;
+    font-weight: 600;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px rgba( 0, 0, 0, 0.75 );
+}
+
+#bbb a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Switch Picture switcher */
+#E1 {
+    position: relative;
+    bottom: 350px;
+    background-image: url(bg2.jpeg);
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 430px;
+}
+
+.pos {
+    position: relative;
+    float: right;
+    width: 400px;
+    overflow: hidden;
+    right: 100px;
+}
+
+.box{
+    width: calc(400px * 3);
+    animation: swiper 10s linear infinite;
+}
+
+.box img{
+    float: left;
+    width: 400px;
+    height: 300px;
+}
+
+@keyframes swiper {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translatex(-400px);
+    }
+    50% {
+        transform: translateX(-400px);
+    }
+    75% {
+        transform: translateX(-800px);
+    }
+    100% {
+        transform: translateX(-800px);
+    }
+}
+
+#E1 h2{
+    position: relative;
+    top: 70px;
+}
+
+#E1 p{
+    position: relative;
+    top: 80px;
+    width: 50%;
+}
+
+/* Gamecard Picture switcher */
+#E2 {
+    position: relative;
+    bottom: 350px;
+    background-image: url(bg2.jpeg);
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 550px;
+}
+
+.pos2 {
+    position: relative;
+    float: left;
+    width: 400px;
+    overflow: hidden;
+    left: 100px;
+}
+
+.box2{
+    width: calc(400px * 3);
+    animation: swiper 10s linear infinite;
+}
+
+.box2 img{
+    float: left;
+    width: 400px;
+    height: 300px;
+}
+
+#E2 p{
+    position: relative;
+    float: right;
+    top: 80px;
+    left: 80px;
+    width: 50%;
+}
+
+#E2 h2{
+    position: relative;
+    float: right;
+    top: 70px;
+    left: 80px;
+    width: 50%;
+}
+  
+  
+/* PS5 */
+
+#E3 {
+    position: relative;
+    bottom: 350px;
+    background-image: url(bg2.jpeg);
+    background-size: cover;
+    padding-bottom: 800px;
+}
+
+.pos3 {
+    position: relative;
+    float: right;
+    top: 250px;
+    width: 400px;
+    overflow: hidden;
+    right: 100px;
+}
+
+.box3 img {
+    float: left;
+    width: 400px;
+    height: 300px;
+}
+
+#E3 h2{
+    position: relative;
+    float: left;
+    top: 350px;
+    width: 50%;
+}
+
+#E3 p{
+    position: relative;
+    float: left;
+    top: 350px;
+    width: 50%;
+}
+
+
+/* IPad */
+#E4 {
+    position: relative;
+    bottom: 350px;
+    background-image: url(bg2.jpeg);
+    background-size: cover;
+    padding-bottom: 700px;
+}
+
+.pos4 {
+    position: relative;
+    float: left;
+    top: 100px;
+    left: 100px;
+    width: 400px;
+    right: 300px;
+    overflow: hidden;
+}
+
+.box4 img{
+    float: left;
+    width: 400px;
+    height: 500px;
+}
+
+#E4 p{
+    position: relative;
+    float: right;
+    left: 80px;
+    top: 250px;
+    width: 50%;
+}
+
+#E4 h2{
+    position: relative;
+    float: right;
+    left: 80px;
+    top: 250px;
+    width: 50%;
+}
+
+/* iPod */
+#E5 {
+    position: relative;
+    bottom: 350px;
+    background-image: url(bg2.jpeg);
+    background-size: cover;
+    padding-bottom: 700px;
+}
+
+.pos5 {
+    position: relative;
+    float: right;
+    width: 400px;
+    overflow: hidden;
+    right: 100px;
+    top: 200px;
+}
+
+.box5 {
+    width: calc(400px * 3);
+    animation: swiper 10s linear infinite;
+}
+
+.box5 img{
+    float: left;
+    width: 400px;
+    height: 300px;
+}
+
+#E5 h2{
+    position: relative;
+    top: 270px;
+}
+
+#E5 p{
+    position: relative;
+    top: 270px;
+    width: 50%;
+}
+
+/* Wireless Speaker */
+#E6 {
+    position: relative;
+    bottom: 350px;
+    background-image: url(bg2.jpeg);
+    background-size: cover;
+    padding-bottom: 280px;
+}
+
+.pos6 {
+    position: relative;
+    right: 440px;
+    width: 400px;
+    top: 200px;
+}
+
+.box6 img{
+    float: left;
+    width: 400px;
+    height: 300px;
+}
+
+#E6 p{
+    position: relative;
+    width: 50%;
+    left: 57%;
+}
+
+#E6 h2{
+    position: relative;
+    bottom: 5px;
+    width: 50%;
+    left: 57%;
+}
+
+
+/* Mouse */
+#E7 {
+    position: relative;
+    bottom: 350px;
+    background-image: url(bg2.jpeg);
+    background-size: cover;
+    padding-bottom: 575px;
+}
+
+.pos7 {
+    position: relative;
+    float: right;
+    top: 70px;
+    width: 400px;
+    right: 100px;
+    overflow: hidden;
+}
+
+.box7 img{
+    float: left;
+    width: 400px;
+    height: 500px;
+}
+
+#E7 h2{
+    position: relative;
+    top: 240px;
+}
+
+#E7 p{
+    position: relative;
+    top: 250px;
+    width: 50%;
+}
+
+/* Earbuds */
+#E8 {
+    position: relative;
+    bottom: 350px;
+    background-image: url(bg2.jpeg);
+    background-size: cover;
+    padding-bottom: 700px;
+}
+
+.pos8 {
+    position: relative;
+    float: left;
+    width: 400px;
+    overflow: hidden;
+    left: 100px;
+    top: 180px;
+}
+
+.box8{
+    width: calc(400px * 3);
+    animation: swiper 10s linear infinite;
+}
+
+.box8 img{
+    float: left;
+    width: 400px;
+    height: 300px;
+}
+
+#E8 p{
+    position: relative;
+    float: right;
+    top: 260px;
+    left: 85px;
+    width: 50%;
+}
+
+#E8 h2{
+    position: relative;
+    float: right;
+    top: 250px;
+    left: 85px;
+    width: 50%;
+}
+
+/* Conclude */
+#Conclude {
+    position: relative;
+    bottom: 300px;
+    background-image: linear-gradient( #2193b0, #6dd5ed );
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.75);
+}
+
+#Conclude p {
+    position: relative;
+    width: 1200px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 0px 1px 10px rgb(214, 219, 204);
+    left: 200px;
+    font-size: 25px;
+}
+
+/* Contact */
+#contact {
+    position: relative;
+    bottom: 250px;
+    background-image: linear-gradient(#91a7ff, #e7e9fd);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.75);
+}
+
+#contact address {
+    position: relative;
+    top: 50px;
+    width: 30%;
+}
+
+#contact h3 {
+    position: relative;
+    bottom: 20px;
+}
+
+#contact-form p {
+    position: relative;
+    bottom: 40px;
+}
+
+#contact-form input{
+    position: relative;
+    width: 760px;
+    height: 20px;
+    left: 500px;
+}
+
+#contact-form button{
+    position: relative;
+    left: 1220px;
+    background-color: #00AC6A;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px rgba( 0, 0, 0, 0.75 );
+}
+
+
+footer {
+    position: relative;
+    bottom: 200px;
+    background-image:url(bg.jpeg);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.75);
+}
+
+/*font style*/
+h1 {
+    text-shadow: 0px 1px 10px black;
+}
+
+header h2 {
+    color: rgb(223, 223, 182);
+    font-family: 'Aboreto', cursive;
+    text-shadow: 0px 1px 5px black;
+}
+
+header p {
+    font-family: 'Itim', cursive;
+    font-size: 20px;
+}
+
+#Subtopic h2 {
+    color: rgb(223, 223, 182);
+    font-family: 'Aboreto', cursive;
+    text-shadow: 0px 1px 5px black;
+}
+
+h2 {
+    color: rgb(223, 223, 182);
+    font-family: 'Aboreto', cursive;
+    text-shadow: 0px 1px 5px black;
+}
+
+p {
+    font-family: 'Itim', cursive;
+    line-height: 30px;
+    color: white;
+}
+
+#E1 h2::after {
+    content: "";
+    display: block;
+    width: 110px;
+    height: 4px;
+    background-color: #66aacc;
+}
+
+#E2 h2::after {
+    content: "";
+    display: block;
+    width: 290px;
+    height: 4px;
+    background-color: #66aacc;
+}
+
+#E3 h2::after {
+    content: "";
+    display: block;
+    width: 240px;
+    height: 4px;
+    background-color: #66aacc;
+}
+
+#E4 h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #66aacc;
+}
+
+#E5 h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #66aacc;
+}
+
+#E6 h2::after {
+    content: "";
+    display: block;
+    width: 240px;
+    height: 4px;
+    background-color: #66aacc;
+}
+
+#E7 h2::after {
+    content: "";
+    display: block;
+    width: 230px;
+    height: 4px;
+    background-color: #66aacc;
+}
+
+#E8 h2::after {
+    content: "";
+    display: block;
+    width: 250px;
+    height: 4px;
+    background-color: #66aacc;
+}
+
+footer a {
+    color: rgb(255, 217, 5);
+    text-decoration: none; 
+}
+
+footer p {
+    text-align: center;
+}
+
+footer h6 {
+    text-align: center;
+}
+
+footer h4 {
+    text-align: center;
+}
+
+footer h5 {
+    text-align: center;
+}
+
+
+/* Scrollbar styles */
+html::-webkit-scrollbar{
+    background-color: #59C173;
+    width: 12px;
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar-track {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+}
+
+html::-webkit-scrollbar-thumb {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(.5, #a17fe0), color-stop(1, #5D26C1));
+    border-radius: 10px;
+}

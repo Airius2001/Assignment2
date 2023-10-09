@@ -1,65 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
-<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
-<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
-<script src="vega_lite_vis.js"></script>
-<title>Assignment 2 Data Visualization</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 Data Visualization</title>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Itim&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ss.css">
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+    <script src="vega_lite_vis.js"></script>
 </head>
-<style>
-    h1{
-        background-image: url(Crime-image.jpg);
-        background-repeat: no-repeat;
-        background-size:cover;
-        padding: 100px;
-        margin: 0%;
-    }
 
-    #choropleth_map{
-        padding-left: 200px;
-    }
-
-    #line_chart{
-        padding-left: 50px;
-    }
-
-    #donut_chart{
-        padding-left: 50px;
-    }
-</style>
 <body>
-<h1 style = "text-align: center; color: rgb(255, 255, 255); font-size: 65px;">Crime and Incarceration in the United States</h1>
-<br>
+    <header id="top">
+        <div>
+            <h1>Crime and Incarceration in the United State</h1>
+            <h2>Welcome to our data visualization website, where we delve into the crime statistics of various states in the United States from 2001 to 2016.</h2>
+            <p>
+                <a href="#Map" class="button">Go to explore</a>
+            </p> 
+        </div>
+    </header>
 
-<h2>Overview map of crime and incarceration in USA during 2016</h2>
-<div id="choropleth_map">
-</div>
-<br>
-<h2>Introduction</h2>
-<p>This is Introduction and this is test </p>
-<br>
-<br>
-<br>
-<br>
+    <section id="Map">
+        <h2>Overview map of crime and incarceration in USA during 2016</h2>
+        <div id="choropleth_map" style="left: 175px; margin-top: 50px;">
+        </div>
+        <h2 style="margin-left: 150px;">Analysis</h2>
+        <p>Based on the map of the United States provided, we can observe distinct trends in crime distribution across different regions.
+            <br>
+            <br>
+            <strong>Crime Rates in the Northwestern Region:</strong> 
+            This indicates that the frequency of criminal activities in the northwestern part of the United States is comparatively lower than in other regions. 
+            Possible factors contributing to this may include lower population density, more remote geographical locations, and relatively stable economic conditions. 
+            This may also reflect the effectiveness of social safety measures and law enforcement agencies in this area.
+            <br>
+            <br>
+            <strong>Moderate Crime Rates in the Eastern Region: </strong>
+            This suggests that the eastern region experiences a moderate level of criminal activity. 
+            Complex social, economic, and geographical factors may be at play. For instance, the presence of large cities might lead to a certain level of criminal activity, but at the same time, there may be more law enforcement agencies and resources available for control and prevention.
+            <br>
+            <br>
+            <strong>High Crime Rates in the Southern Region: </strong>
+            This signifies that the southern region experiences a higher frequency of criminal activities compared to other areas. 
+            There may be a range of social issues at play, such as economic instability, high unemployment rates, lower educational levels, and social conflicts. 
+            This might require more resources and efforts to address the issue of crime.
+            <br>
+            <br>
+            <strong>California, Texas, and Florida as Major Crime Hubs: </strong>
+            This indicates that these three states have the highest concentrations of criminal activities. 
+            There could be a variety of complex factors contributing to crime in these states, including population density, urbanization levels, and economic structures.
+        </p>
+    </section>
 
+    <section id="linechart">
+        <h2>The number of prisoner in the United states from 2001 to 2016</h2>
+        <div id="line_chart" style="left: 175px; margin-top: 80px; float: left;">
+        </div>
+        <p>Based on the left line chart, we can readily observe the fluctuation in the number of criminal records over the past 16 years. Specifically:
+            <br>
+            <br>
+        <strong>Criminal Record in 2001: </strong>It is evident from the chart that the year 2001 saw the lowest number of criminal records in this 16-year period, with approximately 1.17 million cases. 
+        This indicates a relatively low incidence of criminal activity compared to other years, potentially reflecting a degree of stability and safety in the societal environment at that time.
+            <br>
+            <br>
+        <strong>Number of Criminal Records in 2009: </strong>Conversely, 2009 exhibits the peak in criminal records over this 16-year span, with around 1.32 million cases. 
+        This suggests a noticeable increase in the frequency of criminal activity during that year, potentially influenced by a range of social, economic, or political factors leading to an uptick in crime rates.
+        </p>
+        
+    </section>
 
-<div id="line_chart">
-</div>
+    <br>
 
-<br>
-<br>
-<br>
-<br>
-<div id="donut_chart">
-</div>
+    <section id="donutchart">
+        <h2>Analogy of crime type from 2001 to 2016 in USA</h2>
+        <div id="donut_chart" style="left: 175px; margin-top: 50px;">
+        </div>
+    </section>
 
+    <br>
 
-<div id="bar_chart">
-</div>
+    <section id="barchart">
+        <h2>Overview map of crime and incarceration in USA during 2016</h2>
+        <div id="bar_chart" style="left: 185px; margin-top: 50px;">
+        </div>
+    </section>
+    
+    
 </body>
-</html>
