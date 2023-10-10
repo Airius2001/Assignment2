@@ -72,6 +72,10 @@ header p {
     font-size: 20px;
 }
 
+#Map {
+    margin-bottom: -50px;
+}
+
 #Map h2 {
     color: rgb(0, 0, 0);
     font-family: 'Roboto', sans-serif;
@@ -82,12 +86,12 @@ header p {
 }
 
 #Map p{
+    margin-top: 50px;
     font-size: 20px;
     margin-left: 150px;
     margin-right: 150px;
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
 }
 
 #linechart h2 {
@@ -116,4 +120,32 @@ header p {
     margin-left: 100px;
     font-style: italic;
     font-size: 30px;
+}
+
+#donutchart p {
+    position: relative;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 150px;
+    top: 50px;
+    width: 35%;
+    font-size: 20px;
+}
+
+#barchart h2 {
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0px 1px 5px rgb(131, 128, 128);
+    margin-left: 100px;
+    font-style: italic;
+    font-size: 30px;
+}
+
+#barchart p{
+    margin-top: 50px;
+    font-size: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
 }
