@@ -2,21 +2,21 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": {"url": "https://raw.githubusercontent.com/Airius2001/Assignment2/main/Crime_population_percentage.csv"},
     "transform": [
-        {"calculate": "toNumber(datum.year)", "as": "yearInt"},
-        {"filter": "datum.yearInt === YearSelector"}
-      ],
-      "params": [
-        {
-          "name": "YearSelector",
-          "value": 2001,
-          "bind": {
-            "input": "range",
-            "min": 2001,
-            "max": 2016,
-            "step": 1,
-            "name": "Year Selector: "
-          }
-        },
+      {"calculate": "toNumber(datum.year)", "as": "yearInt"},
+      {"filter": "datum.yearInt === YearSelector"}
+    ],
+    "params": [
+      {
+        "name": "YearSelector",
+        "value": 2001,
+        "bind": {
+          "input": "range",
+          "min": 2001,
+          "max": 2016,
+          "step": 1,
+          "name": "Year Selector: "
+        }
+      },
       {
         "name": "search_input",
         "bind": {
@@ -26,24 +26,115 @@
         },
         "value": ""
       }
-      ],
-    "width": 500,
+    ],
+    "width": 400,
     "height":300,
-    "mark": "circle",
-    "encoding": {
-      "opacity":{
-        "condition":{
-          "test": "test(regexp(search_input,'i'),datum.jurisdiction)",
-          "value": 0.8
+    "layer": [
+      {
+        "mark": {
+          "type": "circle",
+          "size": "100"
         },
-        "value": 0.1
+        "encoding": {
+          "opacity":{
+            "condition":{
+              "test": "test(regexp(search_input,'i'),datum.jurisdiction)",
+              "value": 0.8
+            },
+            "value": 0.1
+          },
+          "x": {"field": "prisoner_count", "type": "quantitative", "title": "Number of prisoner"},
+          "y": {"field": "state_population", "type": "quantitative", "title": "State population"},
+          "tooltip":[
+            {"field": "jurisdiction", "type": "ordinal"},
+            {"field":"prisoner_count", "type": "quantitative"}
+          ]
+        }
       },
-      "x": {"field": "prisoner_count", "type": "quantitative", "title": "Number of prisoner"},
-      "y": {"field": "state_population", "type": "quantitative", "title": "State population"},
-      "tooltip":[
-        {"field": "jurisdiction", "type": "ordinal"},
-        {"field":"prisoner_count", "type": "quantitative"}
-      ]
-    }
+      {
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "dx": 10,
+          "baseline": "middle",
+          "fontWeight": "bold",
+          "color": "red"
+        },
+        "encoding": {
+          "text": {"value": "TEXAS"},
+          "x": {
+            "field": "prisoner_count",
+            "type": "quantitative",
+            "aggregate": "mean"
+          },
+          "y": {
+            "field": "state_population",
+            "type": "quantitative",
+            "aggregate": "mean"
+          }
+        },
+        "transform": [
+          {
+            "filter": {"field": "jurisdiction", "equal": "TEXAS"}
+          }
+        ]
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "dx": 10,        
+          "baseline": "middle",
+          "fontWeight": "bold",
+          "color": "red"
+        },
+        "encoding": {
+          "text": {"value": "CALIFORNIA"},
+          "x": {
+            "field": "prisoner_count",
+            "type": "quantitative",
+            "aggregate": "mean"
+          },
+          "y": {
+            "field": "state_population",
+            "type": "quantitative",
+            "aggregate": "mean"
+          }
+        },
+        "transform": [
+          {
+            "filter": {"field": "jurisdiction", "equal": "CALIFORNIA"}
+          }
+        ]
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "dx": 10,        
+          "baseline": "middle",
+          "fontWeight": "bold",
+          "color": "red"
+        },
+        "encoding": {
+          "text": {"value": "FLORIDA"},
+          "x": {
+            "field": "prisoner_count",
+            "type": "quantitative",
+            "aggregate": "mean"
+          },
+          "y": {
+            "field": "state_population",
+            "type": "quantitative",
+            "aggregate": "mean"
+          }
+        },
+        "transform": [
+          {
+            "filter": {"field": "jurisdiction", "equal": "FLORIDA"}
+          }
+        ]
+      }
+    ]
   }
   
