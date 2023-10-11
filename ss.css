@@ -7,16 +7,17 @@ header, section, footer {
 }
 
 header {
-    padding-top: 550px;
-    padding-bottom: 210px;
+    padding-top: 150px;
+    padding-bottom: 150px;
     color: rgb(255, 255, 255);
     background-image: url(bg.jpg);
     background-size: cover;
+    margin-bottom: -50px;
 }
 
 header h1 {
     position: absolute;
-    top: 200px;
+    top: 60px;
     left: 250px;
     font-family: 'Oswald', sans-serif;
     font-weight: normal;
@@ -27,7 +28,7 @@ header h1 {
 
 header h2 {
     position: absolute;
-    top: 300px;
+    top: 150px;
     left: 100px;
     margin-right: 100px;
     text-align: center;
@@ -40,20 +41,6 @@ header p{
     text-align: center;
     width: 700px;
     line-height: 30px;
-}
-
-.button{
-    position: absolute;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    margin-top: 20px;
-    padding: 15px;
-    left: 275px;
-    color: rgb(0, 0, 0);
-    background-color: rgb(223, 223, 182);
-    border-radius: 5px;
-    box-shadow: 0px 2px 6px rgba( 0, 0, 0, 0.75 );
-    text-decoration: none;
 }
 
 /*font style*/
@@ -73,7 +60,8 @@ header p {
 }
 
 #Map {
-    margin-bottom: -50px;
+    margin-top: 50px;
+    background-color: rgba(0, 68, 255, 0.141);
 }
 
 #Map h2 {
@@ -113,6 +101,10 @@ header p {
     font-size: 20px;
 }
 
+#linechart {
+    background-color: rgba(0, 166, 255, 0.141);
+}
+
 #barchart h2 {
     color: rgb(0, 0, 0);
     font-family: 'Roboto', sans-serif;
@@ -142,6 +134,7 @@ header p {
 
 #barchart {
     margin-bottom: -75px;
+    background-color: rgba(0, 68, 255, 0.141);
 }
 
 #scatterplot p {
@@ -154,8 +147,15 @@ header p {
     font-size: 20px;
 }
 
+#scatterplot {
+    margin-top: 57px;
+    background-color: rgba(0, 166, 255, 0.141);
+    padding-bottom: 300px;
+}
+
 #donutchart{
-    margin-top: 120px;
+    margin-top: -20px;
+    background-color: rgba(0, 68, 255, 0.141);
 }
 
 #donutchart h2 {
