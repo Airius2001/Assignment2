@@ -60,8 +60,9 @@ header p {
 }
 
 #Map {
+    
     margin-top: 3.125em;
-    background-color: rgba(0, 68, 255, 0.141);
+    background-color: #EDF5FF
 }
 
 #Map h2 {
@@ -74,6 +75,8 @@ header p {
 }
 
 #Map p{
+    column-count: 2; 
+    column-gap: 5em; 
     margin-top: 3.125em;
     font-size: 1.25em;
     margin-left: 9.375em;
@@ -81,6 +84,8 @@ header p {
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+
 
 #linechart h2 {
     color: rgb(0, 0, 0);
@@ -95,14 +100,14 @@ header p {
     position: relative;
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
-    left: 12.5em;
+    left: 13.25em;
     top: 3.125em;
-    width: 76%;
+    width: 69%;
     font-size: 1.25em;
 }
 
 #linechart {
-    background-color: rgba(0, 166, 255, 0.141);
+    background-color: #FFD8B1;
     padding-bottom: 5em;
 }
 
@@ -116,6 +121,8 @@ header p {
 }
 
 #barchart p{
+    column-count: 2; 
+    column-gap: 5em; 
     margin-top: 2em;
     font-size: 1.25em;
     margin-left: 9.375em;
@@ -135,28 +142,29 @@ header p {
 
 #barchart {
     margin-bottom: -4.6875em;
-    background-color: rgba(0, 68, 255, 0.141);
+    background-color: #EDF5FF
 }
 
 #scatterplot p {
     position: relative;
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
-    left: 12.5em;
+    left: 13.25em;
     top: 6.25em;
     width: 76%;
     font-size: 1.25em;
+    width: 69%;
 }
 
 #scatterplot {
     margin-top: 3.65625em;
-    background-color: rgba(0, 166, 255, 0.141);
+    background-color: #FFD8B1;
     padding-bottom: 18.75em;
 }
 
 #donutchart{
     margin-top: -1.25em;
-    background-color: rgba(0, 68, 255, 0.141);
+    background-color: #EDF5FF;
     padding-bottom: 7em;
 }
 
@@ -173,8 +181,9 @@ header p {
     position: relative;
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
-    left: 9.375em;
-    top: 3.125em;
-    width: 35%;
+    left: 13.25em;
+    top: 3.25em;
+    width: 76%;
     font-size: 1.25em;
+    width: 69%;
 }
